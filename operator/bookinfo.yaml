@@ -1,0 +1,9 @@
+apiVersion: deploy.kubernesto.io/v1alpha1
+kind: Bookinfo
+metadata:
+  name: bookinfo-operator-sample
+spec:
+  replicas: 1
+  meshEnabled: true
+  meshControlPlaneName: "basic"
+  meshControlPlaneNamespace: "istio-system"
