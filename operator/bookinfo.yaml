@@ -5,5 +5,5 @@ metadata:
 spec:
   replicas: 1
   meshEnabled: true
-  meshControlPlaneName: "basic"
+  meshControlPlaneName: "full-install"
   meshControlPlaneNamespace: "istio-system"

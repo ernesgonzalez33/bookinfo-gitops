@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookinfo-operator-sample
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    path: "operator/"
+    repoURL: https://github.com/ernesgonzalez33/bookinfo-gitops
+    targetRevision: error-injection
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: bookinfo-operator-sample
