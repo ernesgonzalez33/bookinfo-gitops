@@ -59,7 +59,7 @@ oc apply -f argo/application-chart.yaml
 Give ArgoCD the ability to deploy `bookinfoes`:
 
 ```
-oc apply -f operator/clusterrole.yaml
+oc apply -f argo/clusterrole.yaml
 oc adm policy add-cluster-role-to-user bookinfo-editor-role system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller
 ```
 
