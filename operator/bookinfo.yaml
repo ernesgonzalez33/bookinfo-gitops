@@ -3,7 +3,7 @@ kind: Bookinfo
 metadata:
   name: bookinfo-operator-sample
 spec:
-  replicas: 1
+  replicas: 2
   meshEnabled: true
   meshControlPlaneName: "basic"
   meshControlPlaneNamespace: "istio-system"
